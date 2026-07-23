@@ -49,8 +49,8 @@ body {
 
 .eyebrow {
   margin: 0 0 9px;
-  color: #67e8f9;
-  font-size: 0.72rem;
+  color: #ac0505;
+  font-size: 1.20rem;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
@@ -129,13 +129,14 @@ body {
 
 .home-page {
   position:relative;
+  isolation: isolate;
   display: grid;
   min-height: 100vh;
-  padding: 70px 20px 200px;
-  color: #ffffff;
-  background: radial-gradient(circle at 20% 20%, #123c5a 0, transparent 38%),
-    radial-gradient(circle at 80% 75%, #183b71 0, transparent 40%), #071424;
+  padding: 32px 20px 200px;
+  color: #250808;
+  background: inear-gradient(135deg, rgba(5, 11, 30, 0.72), rgba(6, 45, 70, 0.45));
   place-items: center;
+  overflow: hidden;
 }
 
 .home-content {
