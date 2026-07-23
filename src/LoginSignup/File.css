@@ -258,3 +258,48 @@ nav a:hover {
     padding: 8px 10px;
   }
 }
+
+.glow-button {
+  /* Layout & Alignment */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between the image and text */
+
+  /* Sizing & Border */
+  padding: 12px 28px;
+  margin-top: 24px;
+  position: relative;
+  top: 20px;
+  
+  border: 2px solid #ff0033;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* Fonts & Colors */
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+
+  /* Red Glow */
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style the icon inside the button */
+.glow-button .btn-icon {
+  width: 20px;       /* Set a fixed icon size */
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Hover Effect */
+.glow-button:hover {
+  background-color: rgba(255, 0, 51, 0.15);
+  box-shadow: 0 0 18px rgba(255, 0, 51, 0.7);
+  transform: translateY(-2px);
+}

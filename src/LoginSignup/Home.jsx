@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import backgroundvideo2 from "../assets/akashxeffects.mp4"
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/6361598310639257060.png"
 function Home() {
   const navigate = useNavigate();
   function signout(){
@@ -18,6 +19,7 @@ function Home() {
         <p className="eyebrow">Avenger Zone</p>
         <h1>Hey! Spider-Man</h1>
         <p>Ready for Fight?</p>
+        <button className="glow-button">START </button>
       </section>
     </main>
   );

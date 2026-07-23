@@ -62,7 +62,7 @@ const getData = JSON.parse(localStorage.getItem('user') || '[]');
 
         <button type="submit">Sign Up</button>
         <p className="login-redirect">
-          Already have an account? <a href="/Login">Log in</a>
+          Already have an account? <a href="/Login">Sign In</a>
         </p>
       </form>
     </main>

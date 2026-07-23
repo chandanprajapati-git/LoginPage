@@ -58,7 +58,7 @@ function Login(){
                 <input type="password" name="password" placeholder="Enter password" required onChange={handleInput} />
               </label>
       
-              <button type="submit">Log In</button>
+              <button type="submit">Sign In</button>
               <p className="login-redirect">
                 If You Want To Create Account? <a href="/">Sign Up</a>
               </p>
