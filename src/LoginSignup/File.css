@@ -1,3 +1,4 @@
+@import "tailwindcss";
 * {
   box-sizing: border-box;
 }
@@ -23,14 +24,14 @@ body {
   overflow: hidden;
 }
 
-.bg-video {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
+.bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
 }
 
 .login-container::before {
@@ -302,4 +303,117 @@ nav a:hover {
   background-color: rgba(255, 0, 51, 0.15);
   box-shadow: 0 0 18px rgba(255, 0, 51, 0.7);
   transform: translateY(-2px);
+}
+.your-text-class {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff; /* Adds an outline so you can still see the text */
+}
+/* Card Container *
+
+/* Individual Card */
+.card{
+    width: 280px;               /* 4 cards in one row */
+    min-height: 380px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    transition: all 0.4s ease;
+}
+
+/* Card Hover */
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px rgba(255,120,0,0.6),
+        0 0 35px rgba(255,60,0,0.4);
+}
+
+/* Image */
+.card img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;      /* Prevents image stretching */
+    border-radius: 10px;    /* Slightly rounded corners */
+    margin-bottom: 15px;
+}
+
+.card h2{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p{
+    color: #dcdcdc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Transparent Glowing Button */
+.card button{
+    margin-top: auto;
+    width: 150px;
+    height: 45px;
+
+    background: transparent;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0s;
+    box-shadow:
+        0 0 8px orangered,
+        0 0 20px rgba(255,69,0,0.5);
+}
+
+.card button:hover{
+    background: orangered;
+    color: white;
+    box-shadow:
+        0 0 15px orangered,
+        0 0 40px red,
+        0 0 60px orange;
+}
+.logout1-button{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 100;
+
+    padding: 12px 22px;
+    background: transparent;
+    border: 2px solid orangered;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+
+    box-shadow: 0 0 10px orangered;
+}
+
+.logout1-button:hover{
+    background: orangered;
+}
+.image{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+    padding: 90px 30px 40px;
+    min-height: 100vh;
+
+    z-index: 2;
 }

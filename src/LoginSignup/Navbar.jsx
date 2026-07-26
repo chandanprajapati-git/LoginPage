@@ -5,8 +5,8 @@ return (
       <ul>
         <li>
           <a href="#">Explore!</a>
-          <a href="/">Signup</a>
-          <a href="/Login">Login</a>
+          <a href="/Signup">Signup</a>
+          <a href="/">Login</a>
           <a href="/Home">Home</a>
         </li>
       </ul>

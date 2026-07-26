@@ -30,7 +30,7 @@ const getData = JSON.parse(localStorage.getItem('user') || '[]');
     arr.push(data);
     localStorage.setItem("user",JSON.stringify(arr));
     alert("You are Now a Spider-Man");
-    navigate('/Login');
+    navigate('/');
     }
    }
   return (
@@ -62,7 +62,7 @@ const getData = JSON.parse(localStorage.getItem('user') || '[]');
 
         <button type="submit">Sign Up</button>
         <p className="login-redirect">
-          Already have an account? <a href="/Login">Sign In</a>
+          Already have an account? <a href="/">Sign In</a>
         </p>
       </form>
     </main>

@@ -60,7 +60,7 @@ function Login(){
       
               <button type="submit">Sign In</button>
               <p className="login-redirect">
-                If You Want To Create Account? <a href="/">Sign Up</a>
+                If You Want To Create Account? <a href="/Signup">Sign Up</a>
               </p>
             </form>
           </main>
