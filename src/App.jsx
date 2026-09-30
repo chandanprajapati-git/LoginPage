@@ -1,7 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import Signup from './LoginSignup/Signup'
 import backgroundimage from './assets/pxfuel.jpg';
 import{Routes,Route,BrowserRouter} from 'react-router-dom';

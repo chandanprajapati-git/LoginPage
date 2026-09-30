@@ -10,7 +10,7 @@ function Home() {
     navigate("/");
   }
   function content(){
-    navigate("/Content");
+    navigate("/");
   }
   return (
     <main className="home-page">
